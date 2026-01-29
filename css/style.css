@@ -1,49 +1,34 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background: #222;
-  color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 15px;
-}
-
-.lista-series, .lista-miembros {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-}
-
-.serie, .miembro {
-  cursor: pointer;
-  width: 200px;
+.miembro {
+  background: #f2f2f2;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
 }
 
-.serie img, .miembro img {
-  width: 100%;
-  border-radius: 10px;
+.miembro img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-.detalle-serie img {
-  display: block;
-  max-width: 400px;
-  margin: 20px auto;
+.miembro h2 {
+  margin: 5px 0 10px 0;
+  font-size: 1.1em;
 }
 
-.calificaciones, #ranking-lista {
-  max-width: 400px;
-  margin: 20px auto;
+.secciones-miembro h3 {
+  margin: 10px 0 5px 0;
+  font-size: 0.95em;
+}
+
+.secciones-miembro ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  min-height: 20px; /* espacio vacío para listas vacías */
 }
