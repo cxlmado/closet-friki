@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranking Closet Friki</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">← Volver</a>
+    <h1>Ranking de Mejores Calificados</h1>
+  </header>
+
+  <main>
+    <ol id="ranking-lista"></ol>
+  </main>
+
+  <script>
+    const ranking = [
+      {nombre: 'Anne', nota: 10},
+      {nombre: 'Ro', nota: 9},
+      {nombre: 'Miembro3', nota: 8}
+    ];
+
+    const lista = document.getElementById('ranking-lista');
+    ranking.forEach(r => {
+      const li = document.createElement('li');
+      li.textContent = `${r.nombre} - ${r.nota}/10`;
+      lista.appendChild(li);
+    });
+  </script>
+</body>
+</html>
