@@ -5,34 +5,34 @@ body {
 }
 
 header {
-  background: #333;
-  color: white;
-  padding: 10px;
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header nav a {
-  color: white;
-  margin-left: 15px;
+header a {
+  color: #fff;
   text-decoration: none;
+  margin-right: 15px;
 }
 
-.lista-series {
+.lista-series, .lista-miembros {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
 }
 
-.serie {
+.serie, .miembro {
   cursor: pointer;
   width: 200px;
   text-align: center;
 }
 
-.serie img {
+.serie img, .miembro img {
   width: 100%;
   border-radius: 10px;
 }
@@ -40,10 +40,10 @@ header nav a {
 .detalle-serie img {
   display: block;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
-.calificaciones {
+.calificaciones, #ranking-lista {
   max-width: 400px;
   margin: 20px auto;
 }
