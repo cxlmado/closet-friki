@@ -1,34 +1,68 @@
-.miembro {
-  background: #f2f2f2;
-  border-radius: 10px;
-  padding: 15px;
-  width: 220px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-.miembro img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
+header {
+  background: #222;
+  color: white;
+  padding: 15px 20px;
 }
 
-.miembro h2 {
-  margin: 5px 0 10px 0;
+header a {
+  color: white;
+  text-decoration: none;
   font-size: 1.1em;
 }
 
-.secciones-miembro h3 {
-  margin: 10px 0 5px 0;
-  font-size: 0.95em;
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
 }
 
-.secciones-miembro ul {
+.tab-button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background-color: #eee;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab-button.active {
+  border-bottom: 3px solid #222;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.perfil-header {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.nombre-miembro {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+.series-lista {
   list-style: none;
+  font-size: 2em;
   padding: 0;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-  min-height: 20px; /* espacio vacío para listas vacías */
 }
