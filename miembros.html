@@ -12,18 +12,24 @@
     <h1>Perfiles de Miembros</h1>
   </header>
 
-  <main class="lista-miembros">
-    <div class="miembro">
-      <img src="img/avatar1.jpg" alt="Ro">
-      <h2>Ro</h2>
-      <p>Apasionado por anime y música.</p>
+  <main>
+    <!-- Tabuladores -->
+    <div class="tabs">
+      <button class="tab-button active" data-miembro="cxlmado">cxlmado</button>
+      <!-- Puedes agregar más botones para otros miembros -->
     </div>
-    <div class="miembro">
-      <img src="img/avatar2.jpg" alt="Anne">
-      <h2>Anne</h2>
-      <p>Experta en Vocaloid y series japonesas.</p>
+
+    <!-- Contenido del miembro -->
+    <div class="tab-content" id="cxlmado">
+      <img src="img/avatar1.jpg" alt="cxlmado" class="perfil-header">
+      <h1 class="nombre-miembro">cxlmado</h1>
+      <h2>Series</h2>
+      <ul class="series-lista">
+        <!-- Series vacías por ahora -->
+      </ul>
     </div>
-    <!-- Más miembros -->
   </main>
+
+  <script src="js/miembros-tabs.js"></script>
 </body>
 </html>
