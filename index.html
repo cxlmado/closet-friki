@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Closet Friki</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Closet Friki</h1>
+    <nav>
+      <a href="ranking.html">Ranking</a>
+      <a href="miembros.html">Miembros</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="lista-series">
+      <!-- Cada serie/película -->
+      <div class="serie" onclick="abrirDetalle('Naruto')">
+        <img src="img/naruto.jpg" alt="Naruto">
+        <h2>Naruto</h2>
+      </div>
+      <div class="serie" onclick="abrirDetalle('One Piece')">
+        <img src="img/onepiece.jpg" alt="One Piece">
+        <h2>One Piece</h2>
+      </div>
+      <!-- Más series... -->
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
